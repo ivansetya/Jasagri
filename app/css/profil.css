@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200i,400&display=swap');
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+.container-detail-akun{
+	background-color: white;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	margin: 20px auto;
+	border-radius: 0.25rem;
+    border-style: solid;
+    border-color: #009579;
+}
+
+.detail-akun h1{
+	margin: 20px auto 20px 40px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+    line-height: 1.2;
+}
+
+#garis{
+	margin: auto;
+	width: 94%;
+}
+
+form{
+	width: 50%;
+	position: relative;
+}
+
+.form-group{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	margin: 20px;
+}
+
+.grouping{
+	margin: 30px auto 30px 30px;
+	width: 100%;
+}
+
+.submit-btn{
+	display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #009579;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.isi-foto{
+	width: 150px;
+	height: 130px;
+	margin-bottom: 10px;
+}
+
+.isi-foto img{
+	border: 2px solid black;
+	border-radius: 10px;
+	width: 150px;
+	height: 130px;
+}
+
+
+.label{
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	font-size: 25px;
+}
+
+#height-control{
+	margin-top: 180px;
+}
+
+.label label{
+	margin: 33px auto 30px 50px;
+}
+
+.data{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-control{
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	padding:10px;
+}
+.form-control:focus {
+	border-color: #009579;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #009579;
+}
+
+.ta{
+	height: 60px;
+}
