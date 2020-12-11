@@ -1,0 +1,149 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script type="text/javascript" href="js/script.js" ></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Material+Icons' rel='stylesheet'>
+    <link href="css/profilusaha.css" rel="stylesheet"/>
+    <link href="css/navbar.css" rel="stylesheet"/>
+    <title>Profil Usaha | Jasagri</title>
+</head>
+<body>
+    <!-- Navbar -->
+	<div class="outer_header">
+		<div class="inner_header">
+			<div class="logo_container">
+				<h1>JASAGRI</h1>
+			</div>
+
+			<ul class="navigation">
+				<a href="homepage.html"><li>Home</li></a>
+				<a href="profile.php"><li>Profil</li></a>
+				<a href="profilUsaha.html"><li>Profil Usaha</li></a>
+				<a href="logout.php"><li>Keluar</li></a>
+			</ul>
+		</div>
+	</div>
+	<!-- Navbar -->
+    <div class="container">
+        <!-- <header class="header">
+            <h1 id="titel" class="text-center"><b>Buat Profil Usaha</b></h1>
+            <p id="sub-titel" class="description text-center">Isikan data diri usaha anda pada formulir yang tersedia</p>
+        </header> -->
+        <form action="php/insert.php" method="POST" id="form-data">
+
+            <div class="form-group">
+                <h1 id="titel" class="text-center"><b>Buat Profil Usaha</b></h1>
+                <p id="sub-titel" class="description text-center">Isikan data diri usaha anda pada formulir yang tersedia</p>
+            </div>
+            <div class="form-group">
+                <label class="header-foto"><b>Logo Usaha:</b></label>
+                <input type="file" id="file" accept="image/*" name="image" hidden="hidden">
+                <label for="file" class="file-foto">
+                    <i class="material-icons">
+                        add_photo_alternate
+                    </i>&nbsp; Pilih Foto
+                </label>
+            </div>
+            <h3><b>Informasi Utama</b></h3>
+            <hr>
+            <div class="form-group">
+                <label id="nama-label" for="nama"><b>Nama usaha:</b></label>
+                <input
+                    type="text"
+                    name="nama"
+                    id="nama"
+                    class="form-control"
+                    placeholder="Nama usaha anda"
+                    required
+                >
+            </div>
+            <div class="form-group">
+                <label id="deskripsi-label"for="deskripsi"><b>Deskripsi usaha:</b></label>
+                <textarea 
+                    name="deskripsi" 
+                    id="input-deskripsi" 
+                    class="form-control input-textarea"
+                    placeholder="Deskripsikan usaha anda">
+                </textarea>
+            </div>
+            <div class="form-group">
+                <label id="kategori" for="kategori"><b>Kategori jasa:</b></label>
+                <select name="kategori" id="input-kategori" class="form-control">
+                    <option value="none">Pilih kategori..</option>
+                    <option value="rumah tangga">Layanan rumah tangga</option>
+                    <option value="keliling">Layanan keliling</option>
+                    <option value="sewa">Layanan penyewaan</option>
+                    <option value="lain">Lain-lain</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label id="subkategori" for="jasa"><b>Jasa:</b></label>
+                <input
+                    type="text"
+                    name="jasa"
+                    id="sub-kategori"
+                    class="form-control"
+                    placeholder="Jasa usaha anda"
+                    required
+                >
+            </div>
+            <h3><b>Jangkauan Layanan</b></h3>
+            <hr>
+            <div class="form-group">
+                <label id="alamat" for="alamat"><b>Alamat:</b></label>
+                <textarea 
+                    name="alamat" 
+                    id="input-alamat" 
+                    class="form-control input-textarea"
+                    placeholder="Alamat usaha anda">
+                </textarea>
+            </div>
+            <div class="form-group">
+                <label id="provinsi-label" for="provinsi"><b>Provinsi:</b></label>
+                <select name="provinsi" id="input-provinsi" class="form-control">
+                    <option value="none">Pilih provinsi..</option>
+                    <option value="Yogya">D.I.Yogyakarta</option>
+                </select>
+            </div>       
+            <h3><b>Informasi Kontak</b></h3>
+            <hr>
+            <div class="form-group">
+                <label id="email" for="email"><b>Email:</b></label>
+                <input
+                    type="text"
+                    name="email"
+                    id="input-email"
+                    class="form-control"
+                    required
+                >
+            </div>  
+            <div class="form-group">
+                <label id="email" for="email"><b>No kontak:</b></label>
+                <input
+                    type="text"
+                    name="nomor"
+                    id="input-nomor"
+                    class="form-control"
+                    required
+                >
+            </div>
+            <h3><b>Galeri</b></h3>
+            <p>Masukkan portofolio pekerjaan anda</p>
+            <hr>
+            <div class="form-group">
+                <input type="file" id="galeri" name="galeri" multiple>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  <b>SIMPAN</b>
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>
