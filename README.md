@@ -1,4 +1,5 @@
 # Jasagri
+[Proyek tugas expo kuliah aplikasi basis web]
 Jasagri merupakan website yang bertujuan sebagai wadah bagi para pemilik jasa serta usaha yang bingung mengiklankan jasanya secara online, dengan jasagri semua pengiklanan menjadi simpel dan menarik.
 
 PANDUAN PENGGUNAAN:
